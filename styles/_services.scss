@@ -1,0 +1,220 @@
+.services {
+    background-color: #F8F8F8;
+    padding: 24px 0 35px;
+
+    .services__header {
+        margin-bottom: 24px;
+
+        .wrapper__title {
+        display: flex;
+        align-items: center;
+
+
+            .services-h2 {
+            margin-left: 12px;
+
+            color: #1B1C21;
+
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 40px;
+            letter-spacing: -0.6px;
+            }
+        }
+
+        .services__button-hidden {
+            display: none;
+        }
+    }
+
+
+
+    .services__wrapper {
+        padding: 0 16px;
+
+        .services__menu {
+            display: flex;
+            justify-content: space-between;
+            overflow: auto;
+
+            .services__button {
+                border: 2px solid transparent;
+                background-color: transparent;
+                padding: 8px 21px;
+                white-space: nowrap;
+
+                color: #7E7E82;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 24px;
+                letter-spacing: -0.2px;
+
+                cursor: pointer;
+            }
+
+            .services__button-active,
+            .services__button:hover {
+                border-radius: 6px;
+                background: #FFF;
+                border-color: #B8FFEC;
+            }
+        }
+
+        .services__menu::-webkit-scrollbar {
+            overflow-x: hidden;
+        }
+
+        .services__text {
+            margin-top: 0;
+            margin-bottom: 16px;
+        }
+
+        .services__text-hidden,
+        .services__text-hidden-dec {
+            display: none;
+        }
+
+        .services__button-read {
+            display: flex;
+            align-items: center;
+
+            text-decoration: none;
+            color: #1B1C21;
+
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: -0.2px;
+
+            margin-bottom: 16px;
+
+            span {
+                margin-left: 8px;
+            }
+        }
+
+        .services__info-right {
+            margin-left: -16px;
+            margin-right: -16px;
+            .services__img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .services {
+        padding: 24px 0 40px;
+
+        .wrapper__title {
+            .services-h2 {
+                margin-left: 20px;
+            }
+        }
+        .services__wrapper {
+            padding: 0 24px;
+
+            .services__info {
+                display: flex;
+                justify-content: space-between;
+
+                .services__info-left {
+                    margin-right: 48px;
+                    width: 50%;
+
+                    .services__text {
+                        line-height: 20px;
+
+                        margin-bottom: 30px;
+                    }
+
+                    .services__text-hidden {
+                        display: inline;
+                    }
+                }
+
+                .services__info-right {
+                    width: 50%;
+                    .services__img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1120px) {
+    .services {
+        margin-bottom: 50px;
+        .services__header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            margin-right: 32px;
+
+            .services-h2 {
+                margin-left: 30px;
+            }
+
+            .services__button {
+                .button__request,
+                .button__status {
+                    width: initial;
+                    .services__button-wrapper {
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+
+                        span {
+                            margin-right: 9px;
+                            white-space: nowrap;
+                        }
+                    }
+                }
+                .button__status {
+                    margin-left: 32px;
+                }
+            }
+
+            .services__button-hidden {
+                display: inline-block;
+            }
+        }
+
+        .services__wrapper {
+            .services__menu {
+                overflow: visible;
+                flex-wrap: wrap;
+
+                margin-bottom: 10px;
+            }
+            .services__info {
+              .services__info-left {
+                  margin-right: 36px;
+                  .services__text-hidden-dec {
+                     display: inline;
+                  }
+              }
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
