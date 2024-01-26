@@ -10,7 +10,7 @@
         align-items: center;
 
 
-            .services-h2 {
+            .services-h1 {
             margin-left: 12px;
 
             color: #1B1C21;
@@ -33,9 +33,17 @@
         padding: 0 16px;
 
         .services__menu {
-            display: flex;
-            justify-content: space-between;
+
             overflow: auto;
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+                list-style: none;
+
+                margin: 0;
+                padding: 0;
+            }
 
             .services__button {
                 border: 2px solid transparent;
@@ -50,6 +58,11 @@
                 letter-spacing: -0.2px;
 
                 cursor: pointer;
+
+                a {
+                    color: #7E7E82;
+                    text-decoration: none;
+                }
             }
 
             .services__button-active,
@@ -108,7 +121,7 @@
         padding: 24px 0 40px;
 
         .wrapper__title {
-            .services-h2 {
+            .services-h1 {
                 margin-left: 20px;
             }
         }
@@ -155,7 +168,7 @@
 
             margin-right: 32px;
 
-            .services-h2 {
+            .services-h1 {
                 margin-left: 30px;
             }
 
@@ -163,6 +176,7 @@
                 .button__request,
                 .button__status {
                     width: initial;
+                    margin-left: 32px;
                     .services__button-wrapper {
                         cursor: pointer;
                         display: flex;
@@ -171,11 +185,31 @@
                         span {
                             margin-right: 9px;
                             white-space: nowrap;
+
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: 24px;
+                            letter-spacing: -0.2px;
                         }
                     }
                 }
-                .button__status {
-                    margin-left: 32px;
+
+                .button-dc {
+                    border: none;
+                    background-color: initial;
+
+                    .button-dc-wrapper {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        border: none;
+                        background: #FF3E79;
+                        border-radius: 50%;
+                        width: 40px;
+                        height: 40px;
+                        padding: 0;
+                    }
                 }
             }
 

@@ -18,10 +18,12 @@ body {
 
 .button {
   border: none;
-  background: none;
+  background: #FF3E79;
+  border-radius: 50%;
   width: 40px;
   height: 40px;
   padding: 0;
+  cursor: pointer;
 }
 
 .header {
@@ -108,7 +110,7 @@ body {
   display: flex;
   align-items: center;
 }
-.services .services__header .wrapper__title .services-h2 {
+.services .services__header .wrapper__title .services-h1 {
   margin-left: 12px;
   color: #1B1C21;
   font-size: 28px;
@@ -123,9 +125,14 @@ body {
   padding: 0 16px;
 }
 .services .services__wrapper .services__menu {
+  overflow: auto;
+}
+.services .services__wrapper .services__menu ul {
   display: flex;
   justify-content: space-between;
-  overflow: auto;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .services .services__wrapper .services__menu .services__button {
   border: 2px solid transparent;
@@ -138,6 +145,10 @@ body {
   line-height: 24px;
   letter-spacing: -0.2px;
   cursor: pointer;
+}
+.services .services__wrapper .services__menu .services__button a {
+  color: #7E7E82;
+  text-decoration: none;
 }
 .services .services__wrapper .services__menu .services__button-active,
 .services .services__wrapper .services__menu .services__button:hover {
@@ -182,7 +193,7 @@ body {
   .services {
     padding: 24px 0 40px;
   }
-  .services .wrapper__title .services-h2 {
+  .services .wrapper__title .services-h1 {
     margin-left: 20px;
   }
   .services .services__wrapper {
@@ -220,12 +231,13 @@ body {
     align-items: center;
     margin-right: 32px;
   }
-  .services .services__header .services-h2 {
+  .services .services__header .services-h1 {
     margin-left: 30px;
   }
   .services .services__header .services__button .button__request,
   .services .services__header .services__button .button__status {
     width: initial;
+    margin-left: 32px;
   }
   .services .services__header .services__button .button__request .services__button-wrapper,
   .services .services__header .services__button .button__status .services__button-wrapper {
@@ -237,9 +249,25 @@ body {
   .services .services__header .services__button .button__status .services__button-wrapper span {
     margin-right: 9px;
     white-space: nowrap;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
   }
-  .services .services__header .services__button .button__status {
-    margin-left: 32px;
+  .services .services__header .services__button .button-dc {
+    border: none;
+    background-color: initial;
+  }
+  .services .services__header .services__button .button-dc .button-dc-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: #FF3E79;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 0;
   }
   .services .services__header .services__button-hidden {
     display: inline-block;
