@@ -160,7 +160,7 @@
 
 @media (min-width: 1120px) {
     .services {
-        margin-bottom: 50px;
+        padding-bottom: 50px;
         .services__header {
             display: flex;
             justify-content: space-between;
@@ -224,6 +224,10 @@
                 flex-wrap: wrap;
 
                 margin-bottom: 10px;
+                ul {
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                }
             }
             .services__info {
               .services__info-left {
